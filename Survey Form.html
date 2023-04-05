@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>freeCodecamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+ <h1 id="title">freeCodecamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <fieldset>
+     <label for="name" id="name-label">Name
+      <input id="name" type="text" name="name" placeholder="Enter your name" required></label>
+     <label for"email" id="email-label">Email
+      <input id="email" type="email" name="email" required placeholder="Enter your Email"></label>
+     <label for="age" id="number-label">AGE (optional)
+      <input id="number" type="number" name="age" min="10" max="99" placeholder="Age"></label>
+    </fieldset>
+    <fieldset>
+<label>Which option best describes your current role?<select id="dropdown" placeholder="Select current role">
+  <option value="">Select current role</option>
+            <option value="1">Studen</option>
+            <option value="2">Full time Job</option>
+            <option value="3">Full time Learner</option>
+            <option value="4">Prefer not to say</option>
+                        <option value="5">Other</option>
+          </select>
+  </label>
+  </fieldset>
+    <fieldset>
+      Would you recommend freeCodeCamp  to a friend?
+      <label for="Definitely">Definitely<input type="radio" name="recommend" class="inline" id="Definitely" value="Definitely">
+  </label>
+  <label>Maybe<input type="radio" name="recommend" class="inline" value="Maybe">
+  </label>
+  <label>Not sure<input type="radio" name="recommend" class="inline" value="Not sure">
+  </label>
+    </fieldset>
+<fieldset>
+  <label>What is your favorite feature of freeCodeCamp?<select id="dropdown" placeholder="Select an option">
+    <option value="">Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Comunity</option>
+            <option value="4">Open Source</option>
+            </select>
+           </label>
+</fieldset>
+        <fieldset>
+          What would you like to see improved? (Check all that apply)
+          <label for="Front-end Projects" name="Front-end Projects"><input id="Front-end Projects" type="checkbox" required name="Front-end Projects" class="inline" value="Front-end Projects" />Front-end Projects
+        <label for="Back-end Projects" name="Back-end Projects"><input id="Back-end Projects" type="checkbox" required name="Back-end Projects" class="inline" value="Back-end Projects" />Back-end Projects
+        </label>
+<label for="Data Visualization" name="Data Visualization"><input id="Data Visualization" type="checkbox" required name="Data Visualization" class="inline" value="Data Visualization"  />Data Visualization
+        </label>
+        <label for="Challenges" name="Challenges"><input id="Challenges" type="checkbox" required name="Challenges" class="inline" value="Challenges" />Challenges
+        </label>
+
+                  <label for="Open Source Community" name="Open Source Community"><input id="Open Source Community" type="checkbox" required name="Open Source Community" class="inline" value="Open Source Community" />Open Source Community
+        </label>
+        <label for="Gitter help rooms" name="Gitter help rooms"><input id="Gitter help rooms" type="checkbox" required name="Gitter help rooms" class="inline" value="Gitter help rooms" />Gitter help rooms
+        </label>
+        <label for="Videos" name="Videos"><input id="Videos" type="checkbox" required name="Videos" class="inline" value="Videos" />Videos
+        </label>
+        <label for="City Meetups" name="City Meetups"><input id="City Meetups" type="checkbox" required name="City Meetups" class="inline" value="City Meetups" />City Meetups
+        </label>
+        <label for="Wiki" name="Wiki"><input id="Wiki" type="checkbox" required name="Wiki" class="inline" value="Wiki" />Wiki
+        </label>
+        <label for="Forum" name="Forum"><input id="Forum" type="checkbox" required name="Forum" class="inline" value="Forum" />Forum
+        </label>
+        <label for="Additional Courses" name="Additional Courses"><input id="Additional Courses" type="checkbox" required name="Additional Courses" class="inline" value="Additional Courses" />Additional Courses
+        </label>
+</fieldset>
+<fieldset>
+<label for="suggestion">Any comments or suggestions?
+          <textarea id="suggestion" name="suggestion" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+      <input type="submit" value="Submit" id="submit" />
+</fieldset>
+  </form>
+  </body>
+</html>
